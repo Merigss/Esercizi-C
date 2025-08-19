@@ -21,7 +21,7 @@ int multiplo(int num, int inf){//funzione per trovare il piu grande multiplo di 
         multiplo= num*n;
         n++;
     }
-    n--;
+    n-=2;
     multiplo = num*n;
     return multiplo;
 }
@@ -39,7 +39,7 @@ int main(void){
     for(int i=0;i<10;i++){
         nRandom=(rand()%(20-10+1))+10;
         printf("Il numero random corrisponde a: %d\n",nRandom);
-        printf("Il piu grande multiplo di %d inferiore a %d corrisponde a %d",num,nRandom,multiplo(num,nRandom));
+        printf("Il piu grande multiplo di %d inferiore a %d corrisponde a %d\n",num,nRandom,multiplo(num,nRandom));
 
     }
 
