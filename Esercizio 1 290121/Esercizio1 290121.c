@@ -24,7 +24,7 @@ int main(void){
 
     }while(passo!=15);
 
-    printf("La somma della sequenza corrisponde a %d",sequenza);
+    printf("La somma della sequenza corrisponde a %d",somma);
 
     return 0;
 }
