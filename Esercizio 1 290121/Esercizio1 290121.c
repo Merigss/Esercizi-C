@@ -17,14 +17,15 @@ int main(void){
     int num=1, passo, somma=0;
 
     do{
-        printf("Il numero corrisponde a: %d\n",num);
-        somma = somma+num;
-        passo=(rand()%(20-10+1))+10;
-        printf("Il passo corrisponde a: %d\n",passo);
+        printf("Il numero corrisponde a: %d\n",num);//stampa il numero 
+        somma = somma+num;//aggiunge alla somma totale il numero corrente
+        passo=(rand()%(20-10+1))+10;//genera il passo casuale tra 10 e 20
+        printf("Il passo corrisponde a: %d\n",passo);//stampa il passo
+        num+=passo;//genera il numero successivo aggiungendo il passo
 
-    }while(passo!=15);
+    }while(passo!=15);//fa un controllo sul passo se il passo è 15 è il numero finale quindi termina il ciclo
 
-    printf("La somma della sequenza corrisponde a %d",somma);
+    printf("La somma della sequenza corrisponde a %d",somma);//stampa la somma
 
     return 0;
 }
