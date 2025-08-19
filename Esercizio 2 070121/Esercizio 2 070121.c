@@ -19,6 +19,7 @@ int multiplo(int num, int inf){//funzione per trovare il piu grande multiplo di 
     int multiplo=0, n=1;
     while(multiplo<inf){
         multiplo= num*n;
+        n++;
     }
     n--;
     multiplo = num*n;
