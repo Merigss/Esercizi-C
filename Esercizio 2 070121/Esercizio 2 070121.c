@@ -16,14 +16,14 @@ di un dato intero inferiore ad un secondo dato intero.
 #define MIN 20;  
 
 int multiplo(int num, int inf){//funzione per trovare il piu grande multiplo di num inferiore ad inf
-    int multiplo=0, n=1;
-    while(multiplo<inf){
-        multiplo= num*n;
-        n++;
+    int multiplo=0, n=1;//inizializzazione delle variabili
+    while(multiplo<inf){//condiizone di permanenza del ciclo
+        multiplo= num*n;//trova il multiplo del numero 
+        n++;            //aumenta n di uno
     }
-    n-=2;
-    multiplo = num*n;
-    return multiplo;
+    n-=2;       //diminuisco n di 2 sennò il multiplo risulta piu alto del limite
+    multiplo = num*n; //calcolo il multiplo
+    return multiplo; //restituisco il multiplo
 }
 
 int main(void){
@@ -32,14 +32,15 @@ int main(void){
     int num,nRandom;
 
     do{
-      printf("Inserisci un numero\n");  
-      scanf("%d",&num);  
-    }while(num<2 || num>10);
+      printf("Inserisci un numero\n"); //ciclo che termina quando 
+      scanf("%d",&num);               // l'utente inserisce un numero >= 2 oppure <= 10   
+    }while(num<2 || num>10);            
 
     for(int i=0;i<10;i++){
-        nRandom=(rand()%(20-10+1))+10;
-        printf("Il numero random corrisponde a: %d\n",nRandom);
-        printf("Il piu grande multiplo di %d inferiore a %d corrisponde a %d\n",num,nRandom,multiplo(num,nRandom));
+        nRandom=(rand()%(200-10+1))+10;//genero il numero random tra 10 e 200
+        printf("Il numero random corrisponde a: %d\n",nRandom);//lo stampo
+        printf("Il piu grande multiplo di %d inferiore a %d corrisponde a %d\n",num,nRandom,multiplo(num,nRandom));//utilizzo la funzione
+        //per trovare il piu grande multiplo di n(numero inserito dall'utente) inferiore a nRandom(numero generato tra 10 e 200)
 
     }
 
