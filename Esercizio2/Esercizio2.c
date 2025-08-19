@@ -3,14 +3,14 @@
 #include <time.h>
 
 int main (void){
-    srand(time(NULL))
+    srand(time(NULL));
     int num, volte=0, x;
 
     do{
         printf("Inserisci un numero\n");
         scanf("%d",&num);
 
-    }while(num<0 || num >=20)
+    }while(num<0 || num >=20);
 
 
     for(int i=0; i<100; i++){
