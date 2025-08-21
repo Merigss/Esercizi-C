@@ -21,7 +21,7 @@ int codifica (int num){//funzione che restituisce il numero di cifre binarie di 
         cifre++;
         num=num/2; //ogni volta che divido per due conto una cifra binaria
     }
-    return cifre
+    return cifre;
 }
 
 int main (void){
