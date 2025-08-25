@@ -9,3 +9,10 @@ somma degli interi della coppia è la più piccola tra le somme delle coppie di 
 è pari al dato intero.
  */
 
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+void funzione(int *a, int *b, int num){
+    
+}
